@@ -8,12 +8,6 @@ import { updateNavigationStatus } from './navigation.js';
 
 export function initSlideController() {
     const slides = Array.from(document.querySelectorAll('.slide'));
-    console.log('DEBUG: Slides detected:', slides.length);
-    console.log('DEBUG: Slide details:', slides.map((s, i) => ({
-        index: i,
-        classes: s.className,
-        dataIndex: s.dataset.index
-    })));
     let currentIndex = 0;
     let isAnimating = true; // Lock immediately until intro finishes
 
