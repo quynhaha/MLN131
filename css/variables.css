@@ -1,0 +1,31 @@
+/* 
+  Theme Variables 
+  Aesthetic: Museum exhibition feeling, Vietnamese revolutionary aesthetic, deep red theater curtains, gold accents
+*/
+:root {
+  /* Colors */
+  --color-bg-primary: #150909; /* Very dark warm gray/black */
+  --color-bg-secondary: #2a1111; /* Dark brownish-red */
+  --color-curtain-red: #8B0000; /* Deep red theater curtain */
+  --color-curtain-dark: #5c0000;
+  
+  --color-accent-gold: #d4af37; /* Metallic gold */
+  --color-accent-gold-light: #f3e5ab;
+  
+  --color-text-main: #fcf6e9; /* Off-white / old paper color */
+  --color-text-muted: #b8a99a; /* Muted text */
+
+  /* Typography */
+  --font-primary: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+
+  /* Transitions & Easing */
+  --ease-cinematic: cubic-bezier(0.77, 0, 0.175, 1);
+  --transition-speed-fast: 0.3s;
+  --transition-speed-normal: 0.8s;
+  --transition-speed-slow: 1.5s;
+  
+  /* Dimensions */
+  --nav-dot-size: 14px;
+  --slide-padding-x: 10%;
+}

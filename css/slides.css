@@ -1,0 +1,36 @@
+/* Slide background modifiers */
+.slide-intro {
+  background-color: var(--color-bg-primary);
+  background-image: radial-gradient(circle at center, rgba(212,175,55,0.1) 0%, transparent 60%);
+}
+
+.slide-history {
+  background-color: var(--color-bg-secondary);
+}
+
+.slide-worker {
+  background-color: #1c0e0e;
+}
+
+.slide-achievements {
+  background-color: var(--color-bg-primary);
+}
+
+.slide-challenges {
+  background-color: #240a0a;
+}
+
+.slide-conclusion {
+  background-color: var(--color-bg-primary);
+  background-image: radial-gradient(circle at center, rgba(212,175,55,0.15) 0%, transparent 70%);
+}
+
+/* Added texture layer for museum/exhibition feel */
+.background-texture {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: url('url-to-texture-if-we-had-one'); /* Placeholder */
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}

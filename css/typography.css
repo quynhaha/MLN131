@@ -1,0 +1,29 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-accent-gold);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.slide-title {
+  font-size: clamp(3rem, 5vw, 6rem);
+  text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.slide-subtitle {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--color-accent-gold-light);
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.slide-body p {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  color: var(--color-text-main);
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+}

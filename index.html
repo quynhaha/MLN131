@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Storytelling Presentation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/slides.css">
+    
+    <!-- GSAP / ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    
+    <!-- App Scripts (ES Modules) -->
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Intro Curtains -->
+    <div class="curtain-container" id="curtain-container">
+        <div class="curtain left" id="curtain-left"></div>
+        <div class="curtain right" id="curtain-right"></div>
+    </div>
+
+    <!-- UI Overlay: Navigation & Progress -->
+    <div class="ui-layer">
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <nav class="nav-dots" id="nav-dots">
+            <!-- Dots generated dynamically by JS -->
+        </nav>
+        
+        <div class="keyboard-cue">
+            <span>Use &uarr; &darr; arrows to navigate</span>
+        </div>
+    </div>
+
+    <!-- Main Presentation Wrapper -->
+    <main class="presentation-container" id="presentation-container">
+        
+        <!-- SLIDE 1: Intro -->
+        <section class="slide slide-intro active" data-index="0">
+            <div class="slide-content text-center">
+                <h1 class="slide-title slide-anim" data-anim="fade-up">A Revolutionary Journey</h1>
+                <p class="slide-subtitle slide-anim" data-anim="fade-up" data-delay="0.2">An Interactive Museum Exhibition</p>
+            </div>
+            <div class="background-texture"></div>
+        </section>
+
+        <!-- SLIDE 2: History -->
+        <section class="slide slide-history" data-index="1">
+            <div class="slide-content">
+                <h2 class="slide-title slide-anim" data-anim="slide-right">Echoes of the Past</h2>
+                <div class="slide-body slide-anim" data-anim="fade-in" data-delay="0.3">
+                    <p>Placeholder content for the history slide. Exploring the origins and historical context.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Worker Role -->
+        <section class="slide slide-worker" data-index="2">
+            <div class="slide-content">
+                <h2 class="slide-title slide-anim" data-anim="slide-left">The Vanguard</h2>
+                <div class="slide-body slide-anim" data-anim="scale-up" data-delay="0.2">
+                    <p>Placeholder content for the worker role slide. Detailing the vital role of the working class.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Achievements -->
+        <section class="slide slide-achievements" data-index="3">
+            <div class="slide-content text-center">
+                <h2 class="slide-title slide-anim" data-anim="fade-up">Triumphs</h2>
+                <div class="slide-body slide-anim" data-anim="fade-up" data-delay="0.2">
+                    <p>Placeholder content for achievements. Showcasing milestones and victories.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Challenges -->
+        <section class="slide slide-challenges" data-index="4">
+            <div class="slide-content">
+                <h2 class="slide-title slide-anim" data-anim="shake">The Struggle</h2>
+                <div class="slide-body slide-anim" data-anim="fade-in" data-delay="0.3">
+                    <p>Placeholder content for challenges. Understanding the obstacles and resistance faced.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: Conclusion -->
+        <section class="slide slide-conclusion" data-index="5">
+            <div class="slide-content text-center">
+                <h2 class="slide-title slide-anim" data-anim="fade-up">Legacy</h2>
+                <p class="slide-subtitle slide-anim" data-anim="fade-up" data-delay="0.2">The enduring spirit marches on.</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
