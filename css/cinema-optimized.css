@@ -1,0 +1,965 @@
+/* ====================================
+   CINEMA-OPTIMIZED.CSS - Performance Focus
+   ==================================== */
+
+/* ====== GENERAL CINEMA STYLING ====== */
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-content {
+    position: relative;
+    z-index: 10;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ====== SCREEN 1: THEATRICAL OPENING ====== */
+
+.cinema-opening {
+    background: url('../assets/images/bg.png') center center / cover no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.cinema-opening .statue {
+    position: absolute;
+    bottom: -20vh;
+    width: 42vw;
+    height: 110vh;
+    z-index: 4;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.statue-left {
+    left: -10vw;
+}
+
+.statue-right {
+    right: -10vw;
+}
+
+.statue img {
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.monumental-title-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 5;
+}
+
+.cinema-main-title {
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    color: #ffd700;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 1.2;
+}
+
+.cinema-subtitle {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
+}
+
+.cinema-tagline {
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 15px rgba(0, 0, 0, 0.6);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    animation: pulse-arrow 2s ease-in-out infinite;
+    z-index: 10;
+}
+
+@keyframes pulse-arrow {
+    0%, 100% { opacity: 0.5; transform: translateX(-50%) translateY(0); }
+    50% { opacity: 1; transform: translateX(-50%) translateY(10px); }
+}
+
+/* ====== SCREEN 2: EMOTIONAL HOOK ====== */
+
+.cinema-emotional-hook {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+}
+
+.dark-factory-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.03);
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.emotional-quote {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+.emotional-quote h2 {
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+}
+
+.emotional-quote h3 {
+    font-size: 0.9em;
+    color: #ffd700;
+}
+
+.emotional-context {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    z-index: 10;
+}
+
+.worker-vulnerability {
+    margin-top: 1.5rem;
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+/* ====== SCREEN 3: CENTRAL QUESTION ====== */
+
+.cinema-central-question {
+    background: linear-gradient(135deg, #2a0000 0%, #000000 100%);
+}
+
+.central-question-title {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 900;
+    color: #ff4444;
+    text-shadow: 0 8px 30px rgba(255, 0, 0, 0.5);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    z-index: 10;
+}
+
+.central-question-title h1 {
+    text-transform: uppercase;
+}
+
+.question-subtext {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #ffaa00;
+    text-shadow: 0 2px 15px rgba(255, 170, 0, 0.4);
+    font-weight: 600;
+}
+
+/* ====== SCREEN 4: THEORY - GCCN ====== */
+
+.cinema-theory-gccn {
+    background: linear-gradient(135deg, #2d1810 0%, #1a0f0a 100%);
+}
+
+.cinema-section-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    color: #ffd700;
+    letter-spacing: 0.1em;
+    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.theory-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.theory-block {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-left: 4px solid #ffd700;
+    border-radius: 4px;
+}
+
+.theory-block h3 {
+    font-size: 1.5rem;
+    color: #ffaa00;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.theory-block p,
+.theory-block li {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.theory-block ul {
+    list-style: none;
+    padding: 0;
+}
+
+.theory-block li {
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.theory-block li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+}
+
+/* ====== SCREEN 5: HISTORICAL MISSION ====== */
+
+.cinema-historical-mission {
+    background: linear-gradient(135deg, #1a0f2e 0%, #0d0520 100%);
+}
+
+.cinema-mission-title {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 900;
+    color: #ffd700;
+    letter-spacing: 0.15em;
+    text-shadow: 0 6px 30px rgba(255, 215, 0, 0.4);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    z-index: 10;
+}
+
+.mission-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.mission-item {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    padding: 2.5rem;
+    border-radius: 8px;
+}
+
+.mission-item:hover {
+    background: rgba(0, 0, 0, 0.8);
+    border-color: rgba(255, 215, 0, 0.6);
+}
+
+.mission-item h3 {
+    font-size: 1.6rem;
+    color: #ffaa00;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.mission-item p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+/* ====== SCREEN 6: WHY UNIONS ====== */
+
+.cinema-why-unions {
+    background: linear-gradient(135deg, #2d2d1a 0%, #1a1710 100%);
+}
+
+.three-reasons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.reason-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reason-card:hover {
+    border-color: rgba(255, 215, 0, 0.8);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.reason-number {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(255, 215, 0, 0.15);
+}
+
+.reason-card h3 {
+    font-size: 1.4rem;
+    color: #ffaa00;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.reason-card p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+/* ====== SCREENS 7-8: WESTERN & CHINESE UNIONS ====== */
+
+.cinema-western-unions {
+    background: linear-gradient(135deg, #3d2817 0%, #2d1710 100%);
+}
+
+.cinema-chinese-unions {
+    background: linear-gradient(135deg, #2d1a3d 0%, #1a0f2d 100%);
+}
+
+.western-history,
+.chinese-model {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.history-period,
+.worker-conditions,
+.union-emergence,
+.model-context,
+.model-differences {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.8rem;
+    border-left: 4px solid #ffd700;
+    border-radius: 4px;
+}
+
+.history-period h3,
+.worker-conditions h3,
+.union-emergence h3,
+.model-context h3,
+.model-differences h3 {
+    font-size: 1.2rem;
+    color: #ffaa00;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.history-period p,
+.worker-conditions p,
+.union-emergence p,
+.model-context p,
+.model-differences p,
+.history-period li,
+.worker-conditions li,
+.union-emergence li,
+.model-context li,
+.model-differences li {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.worker-conditions ul,
+.model-differences ul {
+    list-style: none;
+    padding: 0;
+}
+
+.worker-conditions li,
+.model-differences li {
+    margin: 0.6rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.worker-conditions li:before,
+.model-differences li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+}
+
+/* ====== SCREENS 9A-9E: VIETNAM UNIONS MAIN ACT ====== */
+
+.cinema-vietnam-unions-1,
+.cinema-vietnam-unions-2,
+.cinema-vietnam-unions-3,
+.cinema-vietnam-unions-4,
+.cinema-vietnam-unions-5 {
+    background: linear-gradient(135deg, #2d3d1a 0%, #1a2410 100%);
+}
+
+.law-reference {
+    font-size: 0.9rem;
+    color: #ffaa00;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+.definition-text {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+}
+
+.history-timeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.timeline-event {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+}
+
+.timeline-year {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.timeline-event p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.role-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-left: 4px solid #ffd700;
+    border-radius: 4px;
+}
+
+.role-item h3 {
+    font-size: 1.3rem;
+    color: #ffaa00;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.role-item p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.rights-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.rights-list li {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 1.2rem 0 1.2rem 2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.rights-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.significance-content {
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.significance-item {
+    font-size: 1.4rem;
+    color: #ffaa00;
+    margin: 1.5rem 0;
+    font-weight: 600;
+}
+
+.significance-conclusion {
+    margin-top: 2.5rem !important;
+    font-size: 1.2rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+}
+
+/* ====== SCREEN 10: COMPARISON STAGE ====== */
+
+.cinema-comparison-stage {
+    background: linear-gradient(135deg, #1a2d3d 0%, #0d1a2d 100%);
+}
+
+.comparison-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.comparison-column {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    border-top: 3px solid;
+}
+
+.comparison-column.western {
+    border-top-color: #a0522d;
+}
+
+.comparison-column.chinese {
+    border-top-color: #ff4444;
+}
+
+.comparison-column.vietnamese {
+    border-top-color: #ffd700;
+}
+
+.comparison-column h3 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.comparison-column.western h3 {
+    background: rgba(160, 82, 45, 0.2);
+    color: #daa520;
+}
+
+.comparison-column.chinese h3 {
+    background: rgba(255, 68, 68, 0.2);
+    color: #ff8888;
+}
+
+.comparison-column.vietnamese h3 {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffaa00;
+}
+
+.comparison-rows {
+    padding: 0;
+}
+
+.comparison-row {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-row .label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.comparison-row .value {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+/* ====== SCREEN 11: ACHIEVEMENTS ====== */
+
+.cinema-achievements {
+    background: linear-gradient(135deg, #1a3d1a 0%, #0d2410 100%);
+}
+
+.achievements-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.achievement-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #00cc00;
+}
+
+.achievement-item:hover {
+    border-left-color: #00ff00;
+    background: rgba(0, 100, 0, 0.2);
+}
+
+.achievement-item h3 {
+    font-size: 1.3rem;
+    color: #00ff00;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.achievement-item p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+/* ====== SCREEN 12: LIMITATIONS ====== */
+
+.cinema-limitations {
+    background: linear-gradient(135deg, #3d1a1a 0%, #2d0d0d 100%);
+}
+
+.limitations-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.limitation-block {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.8rem;
+    border-left: 4px solid #ff4444;
+    border-radius: 4px;
+}
+
+.limitation-block h3 {
+    font-size: 1.2rem;
+    color: #ff6666;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.limitation-block p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+/* ====== SCREEN 13: POUCHEN CASE STUDY ====== */
+
+.cinema-pouchen-case {
+    background: linear-gradient(135deg, #2d1a1a 0%, #1a0f0f 100%);
+}
+
+.case-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    z-index: 10;
+}
+
+.timeline-point {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.8rem;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    position: relative;
+}
+
+.timeline-point::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background: #ff4444;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+
+.timeline-point .date {
+    display: block;
+    font-size: 0.9rem;
+    color: #ff8888;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-point h4 {
+    font-size: 1rem;
+    color: #ffaa00;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-point p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+.case-analysis {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-left: 4px solid #ffaa00;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.case-analysis h3 {
+    font-size: 1.3rem;
+    color: #ffaa00;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.case-analysis p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+/* ====== SCREEN 14: FUTURE CHALLENGES ====== */
+
+.cinema-future-challenges {
+    background: linear-gradient(135deg, #1a2d3d 0%, #0d1a2d 100%);
+}
+
+.challenges-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.challenge-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border: 2px solid rgba(0, 150, 255, 0.3);
+    border-radius: 8px;
+}
+
+.challenge-item h3 {
+    font-size: 1.2rem;
+    color: #00aaff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.challenge-item p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+/* ====== SCREEN 15: FUTURE VISION ====== */
+
+.cinema-future-vision {
+    background: linear-gradient(135deg, #3d2817 0%, #2d1710 100%);
+}
+
+.future-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.vision-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    border-radius: 8px;
+}
+
+.vision-item:hover {
+    border-color: rgba(255, 215, 0, 0.8);
+}
+
+.vision-item h3 {
+    font-size: 1.3rem;
+    color: #ffaa00;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.vision-item p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+}
+
+/* ====== SCREEN 16: CINEMATIC ENDING ====== */
+
+.cinema-ending {
+    background: linear-gradient(135deg, #1a1a2e 0%, #0d0d1a 100%);
+    position: relative;
+}
+
+.ending-quote {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: #ffffff;
+    line-height: 1.5;
+    text-shadow: 0 6px 30px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ending-quote h2 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.ending-subtext {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    z-index: 10;
+}
+
+/* ====== RESPONSIVE ADJUSTMENTS ====== */
+
+@media (max-width: 1024px) {
+    .three-reasons,
+    .mission-items,
+    .roles-grid,
+    .challenges-content,
+    .future-vision {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-columns {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .cinema-main-title {
+        font-size: 2.5rem;
+    }
+
+    .theory-content,
+    .western-history,
+    .chinese-model,
+    .history-timeline {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .statue {
+        width: 50vw !important;
+        height: 70vh !important;
+        bottom: -15vh !important;
+    }
+
+    .cinema-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .case-timeline {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .achievements-content {
+        grid-template-columns: 1fr;
+    }
+}

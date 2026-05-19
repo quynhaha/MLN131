@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Đoàn Việt Nam - Cinematic Storytelling Experience</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/slides.css">
+    <link rel="stylesheet" href="css/cinema-optimized.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    
+    <!-- App Scripts -->
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Intro Curtains -->
+    <div class="curtain-container" id="curtain-container">
+        <div class="curtain left" id="curtain-left"></div>
+        <div class="curtain right" id="curtain-right"></div>
+    </div>
+
+    <!-- UI Layer -->
+    <div class="ui-layer">
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <nav class="nav-dots" id="nav-dots"></nav>
+        <div class="keyboard-cue">
+            <span>Use ↑ ↓ arrows to navigate</span>
+        </div>
+    </div>
+
+    <!-- Main Presentation -->
+    <main class="presentation-container" id="presentation-container">
+
+        <!-- ====== ACT 1: OPENING ====== -->
+
+        <!-- SCREEN 1: Theatrical Opening -->
+        <section class="slide cinema-opening active" data-index="0" data-act="opening" data-scene="theatrical-opening">
+            <div class="cinematic-lighting"></div>
+            <div class="background-texture"></div>
+
+            <!-- Stage Elements -->
+            <div class="statue statue-left marx">
+                <img src="assets/images/mac.png" alt="Marx Statue">
+            </div>
+            <div class="statue statue-right lenin">
+                <img src="assets/images/lenin.png" alt="Lenin Statue">
+            </div>
+
+            <!-- Main Title -->
+            <div class="slide-content monumental-title-layout text-center">
+                <h1 class="cinema-main-title slide-anim" data-anim="scale-up" data-delay="0.6">CHỦ NGHĨA XÃ HỘI KHOA HỌC</h1>
+                <h2 class="cinema-subtitle slide-anim" data-anim="fade-up" data-delay="0.9">CÔNG ĐOÀN VIỆT NAM</h2>
+                <p class="cinema-tagline slide-anim" data-anim="fade-up" data-delay="1.2">Người bảo vệ quyền lợi công nhân</p>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" id="scroll-indicator">
+                <span>↓ Bắt đầu</span>
+            </div>
+        </section>
+
+        <!-- SCREEN 2: Emotional Hook - Worker Struggle -->
+        <section class="slide cinema-emotional-hook" data-index="1" data-act="opening" data-scene="emotional-hook">
+            <div class="dark-factory-bg"></div>
+            <div class="worker-silhouette"></div>
+            <div class="dramatic-spotlight"></div>
+
+            <div class="slide-content">
+                <div class="emotional-quote slide-anim" data-anim="fade-in" data-delay="0.5">
+                    <h2>"Mỗi ngày làm việc 12 tiếng...</h2>
+                    <h3>nhưng cuối tháng lại bị nợ lương."</h3>
+                </div>
+                <div class="emotional-context slide-anim" data-anim="fade-up" data-delay="1">
+                    <p>Hoặc: một ngày nào đó, AI thay thế công việc của bạn?</p>
+                    <p class="worker-vulnerability">Trước áp lực từ chủ sử dụng lao động,<br>cá nhân công nhân rất dễ bị chèn ép.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 3: The Central Question -->
+        <section class="slide cinema-central-question" data-index="2" data-act="opening" data-scene="central-question">
+            <div class="strike-atmosphere"></div>
+            <div class="crowd-silhouettes"></div>
+            <div class="tension-lighting"></div>
+
+            <div class="slide-content text-center">
+                <div class="central-question-title slide-anim" data-anim="scale-up" data-delay="0.5">
+                    <h1>AI SẼ BẢO VỆ<br>NGƯỜI LAO ĐỘNG?</h1>
+                </div>
+                <div class="question-subtext slide-anim" data-anim="fade-up" data-delay="1.2">
+                    <p>Hay phải là... tập thể?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ACT 2: THEORY & HISTORY ====== -->
+
+        <!-- SCREEN 4: GCCN & Theory -->
+        <section class="slide cinema-theory-gccn" data-index="3" data-act="theory" data-scene="gccn-foundation">
+            <div class="industrial-revolution-bg"></div>
+            <div class="machinery-layer"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="slide-right">GIAI CẤP CÔNG NHÂN</h2>
+                <div class="theory-content slide-anim" data-anim="fade-in" data-delay="0.5">
+                    <div class="theory-block">
+                        <h3>Khái Niệm</h3>
+                        <p>Giai cấp công nhân là một tập đoàn xã hội ổn định, hình thành và phát triển cùng với quá trình phát triển của nền công nghiệp hiện đại.</p>
+                    </div>
+                    <div class="theory-block">
+                        <h3>Đặc Điểm Nổi Bật</h3>
+                        <ul>
+                            <li>Tổ chức cao</li>
+                            <li>Kỷ luật chặt chẽ</li>
+                            <li>Tinh thần cách mạng triệt để</li>
+                            <li>Đại diện cho lực lượng sản xuất tiên tiến</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 5: Historical Mission -->
+        <section class="slide cinema-historical-mission" data-index="4" data-act="theory" data-scene="historical-mission">
+            <div class="ideological-radiance"></div>
+
+            <div class="slide-content text-center">
+                <h2 class="cinema-mission-title slide-anim" data-anim="scale-up" data-delay="0.3">SỨ MỆNH LỊCH SỬ</h2>
+                
+                <div class="mission-items slide-anim" data-anim="fade-in" data-delay="0.8">
+                    <div class="mission-item">
+                        <h3>Xóa Bỏ Tận Gốc</h3>
+                        <p>Chế độ người bóc lột người</p>
+                    </div>
+                    <div class="mission-item">
+                        <h3>Giải Phóng</h3>
+                        <p>GCCN và toàn thể nhân dân lao động</p>
+                    </div>
+                    <div class="mission-item">
+                        <h3>Xây Dựng</h3>
+                        <p>Xã hội chủ nghĩa và cộng sản</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ACT 3: WHY UNIONS ====== -->
+
+        <!-- SCREEN 6: Why Workers Need Unions - Multi-Part -->
+        <section class="slide cinema-why-unions" data-index="5" data-act="necessity" data-scene="why-unions">
+            <div class="union-necessity-bg"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="slide-left">VÌ SAO CÔNG NHÂN CẦN CÔNG ĐOÀN?</h2>
+                
+                <div class="three-reasons slide-anim" data-anim="fade-in" data-delay="0.5">
+                    <div class="reason-card">
+                        <div class="reason-number">1</div>
+                        <h3>Công nhân là bên yếu thế</h3>
+                        <p>Không nắm tư liệu sản xuất, dễ bị chèn ép bởi giới chủ.</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-number">2</div>
+                        <h3>Cần tổ chức đại diện</h3>
+                        <p>Để thương lượng bình đẳng về tiền lương, bảo hiểm, điều kiện làm việc.</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-number">3</div>
+                        <h3>Sức mạnh tập thể</h3>
+                        <p>Đoàn kết công nhân thành một lực lượng đủ sức tạo đối trọng với giới chủ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 7: Western Trade Unions -->
+        <section class="slide cinema-western-unions" data-index="6" data-act="necessity" data-scene="western-unions">
+            <div class="industrial-europe-bg"></div>
+            <div class="steam-factories"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="fade-up">NGHIỆP ĐOÀN TƯ BẢN TÂY ÂU</h2>
+                
+                <div class="western-history slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <div class="history-period">
+                        <h3>Cuối Thế Kỷ XVIII - Đầu Thế Kỷ XIX</h3>
+                        <p>Cách mạng công nghiệp bùng nổ ở Anh, Pháp, Đức</p>
+                    </div>
+                    <div class="worker-conditions">
+                        <h3>Điều Kiện Lao Động Khắc Nghiệt</h3>
+                        <ul>
+                            <li>Thời gian lao động kéo dài</li>
+                            <li>Lương thấp</li>
+                            <li>Không bảo hiểm hay quyền lợi lao động</li>
+                        </ul>
+                    </div>
+                    <div class="union-emergence">
+                        <h3>Ra Đời của Nghiệp Đoàn</h3>
+                        <p>Công nhân liên kết bảo vệ quyền lợi, tăng lương, giảm giờ làm, cải thiện điều kiện.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 8: Chinese Unions -->
+        <section class="slide cinema-chinese-unions" data-index="7" data-act="necessity" data-scene="chinese-unions">
+            <div class="socialist-industrial-bg"></div>
+            <div class="red-banners"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="slide-right">CÔNG ĐOÀN TRUNG QUỐC</h2>
+                
+                <div class="chinese-model slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <div class="model-context">
+                        <h3>Bối Cảnh Ra Đời</h3>
+                        <p>Đầu thế kỷ XX: Tổng Công hội Toàn quốc Trung Quốc thành lập (1925)</p>
+                        <p>Sau 1949: Công đoàn Trung Quốc được củng cố dưới sự lãnh đạo Đảng Cộng sản</p>
+                    </div>
+                    <div class="model-differences">
+                        <h3>Khác Với Nghiệp Đoàn Phương Tây</h3>
+                        <ul>
+                            <li>Hoạt động dưới sự lãnh đạo của Đảng Cộng sản</li>
+                            <li>Vừa bảo vệ người lao động</li>
+                            <li>Vừa ổn định xã hội và phát triển đất nước</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ACT 4: VIETNAMESE UNIONS (MAIN ACT) ====== -->
+
+        <!-- SCREEN 9A: Công Đoàn Việt Nam - Definition -->
+        <section class="slide cinema-vietnam-unions-1" data-index="8" data-act="vietnam" data-scene="definition">
+            <div class="vietnam-revolutionary-bg"></div>
+
+            <div class="slide-content text-center">
+                <h2 class="cinema-section-title slide-anim" data-anim="fade-up">CÔNG ĐOÀN VIỆT NAM</h2>
+                
+                <div class="vietnam-definition slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <h3 class="law-reference">Theo Luật Công Đoàn 2024</h3>
+                    <p class="definition-text">
+                        Tổ chức chính trị – xã hội rộng lớn của giai cấp công nhân và người lao động, 
+                        được thành lập trên cơ sở tự nguyện, dưới sự lãnh đạo của Đảng Cộng sản Việt Nam, 
+                        trực thuộc Mặt trận Tổ quốc Việt Nam.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 9B: Historical Formation -->
+        <section class="slide cinema-vietnam-unions-2" data-index="9" data-act="vietnam" data-scene="history-formation">
+            <div class="vietnam-history-timeline"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="slide-left">LỊCH SỬ HÌNH THÀNH</h2>
+                
+                <div class="history-timeline slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <div class="timeline-event">
+                        <span class="timeline-year">Cuối XIX - Đầu XX</span>
+                        <p>GCCN Việt Nam ra đời trong bối cảnh khai thác thuộc địa Pháp</p>
+                    </div>
+                    <div class="timeline-event">
+                        <span class="timeline-year">1920</span>
+                        <p>Tôn Đức Thắng thành lập Công hội Ba Son</p>
+                    </div>
+                    <div class="timeline-event">
+                        <span class="timeline-year">28/7/1929</span>
+                        <p>Tổng Công hội Đỏ Bắc Kỳ thành lập - Khởi đầu Công đoàn Việt Nam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 9C: Roles and Responsibilities -->
+        <section class="slide cinema-vietnam-unions-3" data-index="10" data-act="vietnam" data-scene="roles">
+            <div class="vietnam-roles-bg"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="fade-up">VAI TRÒ CÔNG ĐOÀN</h2>
+                
+                <div class="roles-grid slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <div class="role-item">
+                        <h3>Bảo Vệ Quyền Lợi</h3>
+                        <p>Lương, bảo hiểm xã hội, hợp đồng lao động, điều kiện làm việc, chế độ phúc lợi</p>
+                    </div>
+                    <div class="role-item">
+                        <h3>Đại Diện Tiếng Nói</h3>
+                        <p>Đối thoại, thương lượng tập thể với doanh nghiệp và Nhà nước</p>
+                    </div>
+                    <div class="role-item">
+                        <h3>Giáo Dục Chính Trị</h3>
+                        <p>Nâng cao ý thức, tuyên truyền pháp luật, nâng cao trình độ nghề nghiệp</p>
+                    </div>
+                    <div class="role-item">
+                        <h3>Đồng Hành Phát Triển</h3>
+                        <p>Công nghiệp hóa, hiện đại hóa, chuyển đổi số</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 9D: Worker Rights -->
+        <section class="slide cinema-vietnam-unions-4" data-index="11" data-act="vietnam" data-scene="worker-rights">
+            <div class="worker-rights-bg"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="slide-right">QUYỀN CỦA NGƯỜI LAO ĐỘNG</h2>
+                
+                <div class="rights-content slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <ul class="rights-list">
+                        <li>Thành lập, gia nhập và hoạt động công đoàn</li>
+                        <li>Được công đoàn bảo vệ quyền lợi</li>
+                        <li>Được hỗ trợ tư vấn pháp lý</li>
+                        <li>Công dân nước ngoài làm việc hợp pháp ≥12 tháng cũng được tham gia công đoàn</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 9E: Significance -->
+        <section class="slide cinema-vietnam-unions-5" data-index="12" data-act="vietnam" data-scene="significance">
+            <div class="significance-radiance"></div>
+
+            <div class="slide-content text-center">
+                <h2 class="cinema-section-title slide-anim" data-anim="fade-up">Ý NGHĨA LỊCH SỬ</h2>
+                
+                <div class="significance-content slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <p class="significance-item">Bảo vệ giai cấp công nhân</p>
+                    <p class="significance-item">Ổn định xã hội</p>
+                    <p class="significance-item">Thúc đẩy phát triển kinh tế - xã hội</p>
+                    <p class="significance-conclusion">Thực hiện sứ mệnh lịch sử của GCCN trong thời kỳ công nghiệp hóa, hiện đại hóa và hội nhập quốc tế</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 10: Comparison Stage - Three Columns -->
+        <section class="slide cinema-comparison-stage" data-index="13" data-act="comparison" data-scene="three-systems">
+            <div class="comparison-bg"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title text-center slide-anim" data-anim="fade-up">SO SÁNH MÔ HÌNH CÔNG ĐOÀN</h2>
+                
+                <div class="comparison-columns slide-anim" data-anim="fade-in" data-delay="0.8">
+                    <div class="comparison-column western">
+                        <h3>Tây Âu</h3>
+                        <div class="comparison-rows">
+                            <div class="comparison-row">
+                                <span class="label">Ra Đời:</span>
+                                <span class="value">CNTB</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="label">Mục Tiêu:</span>
+                                <span class="value">Quyền Lợi Lao Động</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="label">Với Nhà Nước:</span>
+                                <span class="value">Khá Độc Lập</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="label">Vai Trò:</span>
+                                <span class="value">Đấu Tranh Quyền Lợi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-column chinese">
+                        <h3>Trung Quốc</h3>
+                        <div class="comparison-rows">
+                            <div class="comparison-row">
+                                <span class="label">Ra Đời:</span>
+                                <span class="value">XHCN</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="label">Mục Tiêu:</span>
+                                <span class="value">Ổn Định Xã Hội</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="label">Với Nhà Nước:</span>
+                                <span class="value">Dưới Đảng</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="label">Vai Trò:</span>
+                                <span class="value">Quản Lý & Hỗ Trợ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-column vietnamese">
+                        <h3>Việt Nam</h3>
+                        <div class="comparison-rows">
+                            <div class="comparison-row">
+                                <span class="label">Ra Đời:</span>
+                                <span class="value">Cách Mạng Giải Phóng</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="label">Mục Tiêu:</span>
+                                <span class="value">Bảo Vệ & Xây Dựng</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="label">Với Nhà Nước:</span>
+                                <span class="value">Dưới Đảng</span>
+                            </div>
+                            <div class="comparison-row">
+                                <span class="label">Vai Trò:</span>
+                                <span class="value">Đại Diện & Đồng Hành</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ACT 5: MODERN REALITY ====== -->
+
+        <!-- SCREEN 11: Achievements -->
+        <section class="slide cinema-achievements" data-index="14" data-act="reality" data-scene="achievements">
+            <div class="hopeful-bg"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="fade-up">THÀNH TỰU CÔNG ĐOÀN</h2>
+                
+                <div class="achievements-content slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <div class="achievement-item">
+                        <h3>13 Triệu Đoàn Viên</h3>
+                        <p>Công đoàn Việt Nam quản lý và chăm sóc hơn 13 triệu đoàn viên</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h3>Chương Trình Tết Sum Vầy</h3>
+                        <p>Hỗ trợ công nhân có hoàn cảnh khó khăn dịp Tết Nguyên đán</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h3>Hỗ Trợ Hậu COVID-19</h3>
+                        <p>Chương trình hỗ trợ tài chính cho lao động bị ảnh hưởng đại dịch</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h3>Vay Vốn & Bảo Hiểm</h3>
+                        <p>Hỗ trợ nhà ở, vay vốn, và chương trình bảo hiểm cho công nhân</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 12: Limitations & Strikes -->
+        <section class="slide cinema-limitations" data-index="15" data-act="reality" data-scene="limitations">
+            <div class="tense-factory-bg"></div>
+            <div class="emergency-red-lighting"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="shake">HẠN CHẾ VÀ TRANH CHẤP</h2>
+                
+                <div class="limitations-content slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <div class="limitation-block">
+                        <h3>Năng Lực Thương Lượng Hạn Chế</h3>
+                        <p>Cán bộ công đoàn cơ sở là nhân viên của doanh nghiệp, dễ bị phụ thuộc, thiếu chuyên môn đàm phán</p>
+                    </div>
+                    <div class="limitation-block">
+                        <h3>Thủ Tục Đình Công Phức Tạp</h3>
+                        <p>Quy trình pháp luật khó thực hiện trên thực tế, dẫn đến ngừng việc tập thể ngoài trình tự</p>
+                    </div>
+                    <div class="limitation-block">
+                        <h3>Công Cụ Hỗ Trợ Chưa Đủ Mạnh</h3>
+                        <p>Thiếu quỹ dự phòng lớn để hỗ trợ tài chính khi tranh chấp kéo dài</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 13: Pouchen Case Study - Documentary Timeline -->
+        <section class="slide cinema-pouchen-case" data-index="16" data-act="reality" data-scene="pouchen-case">
+            <div class="documentary-timeline-bg"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="fade-up">CASE STUDY: POUCHEN 2022</h2>
+                
+                <div class="case-timeline slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <div class="timeline-point">
+                        <span class="date">06/01/2022</span>
+                        <h4>Thông báo giảm thưởng Tết</h4>
+                        <p>Từ 1,9-2,2 tháng lương xuống còn 1,54 tháng lương do sụt giảm sản xuất</p>
+                    </div>
+                    <div class="timeline-point">
+                        <span class="date">07/01/2022</span>
+                        <h4>Ngừng việc tập thể tự phát</h4>
+                        <p>16.000 công nhân đồng loạt phản đối, tràn ra Quốc lộ 1K, ách tắc giao thông</p>
+                    </div>
+                    <div class="timeline-point">
+                        <span class="date">07-12/01</span>
+                        <h4>Lãn công quy mô lớn</h4>
+                        <p>Công nhân tiếp tục tổ chức lãn công trong khuôn viên nhà máy</p>
+                    </div>
+                    <div class="timeline-point">
+                        <span class="date">12/01/2022</span>
+                        <h4>Kết thúc xung đột</h4>
+                        <p>Doanh nghiệp giữ nguyên thưởng giảm nhưng chi trả 100% lương 4 ngày</p>
+                    </div>
+                </div>
+
+                <div class="case-analysis slide-anim" data-anim="fade-up" data-delay="1.2">
+                    <h3>Bài Học</h3>
+                    <p>Đình công tự phát ngoài trình tự pháp luật, phản ánh khoảng cách giữa CĐCS và người lao động</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ACT 6: FUTURE & ENDING ====== -->
+
+        <!-- SCREEN 14: Future Challenges -->
+        <section class="slide cinema-future-challenges" data-index="17" data-act="future" data-scene="challenges">
+            <div class="cyber-industrial-bg"></div>
+            <div class="automation-layer"></div>
+
+            <div class="slide-content">
+                <h2 class="cinema-section-title slide-anim" data-anim="slide-left">THÁCH THỨC TƯƠNG LAI</h2>
+                
+                <div class="challenges-content slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <div class="challenge-item">
+                        <h3>AI & Tự Động Hóa</h3>
+                        <p>Cách mạng công nghiệp 4.0 tạo ra nguy hiểm về thất nghiệp</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Gig Economy</h3>
+                        <p>Lao động tài xế, shipper, lao động tự do không có quan hệ lao động truyền thống</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Tổ Chức Đối Thủ</h3>
+                        <p>Các tổ chức người lao động độc lập tạo áp lực cạnh tranh</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Hội Nhập Quốc Tế</h3>
+                        <p>CPTPP, EVFTA yêu cầu đa dạng hóa tổ chức đại diện</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 15: Future of Working Class -->
+        <section class="slide cinema-future-vision" data-index="18" data-act="future" data-scene="vision">
+            <div class="sunrise-industrial-bg"></div>
+            <div class="hopeful-horizon"></div>
+
+            <div class="slide-content text-center">
+                <h2 class="cinema-section-title slide-anim" data-anim="fade-up">TƯƠNG LAI GIAI CẤP CÔNG NHÂN</h2>
+                
+                <div class="future-vision slide-anim" data-anim="fade-in" data-delay="0.6">
+                    <div class="vision-item">
+                        <h3>Công Nhân Tri Thức</h3>
+                        <p>Chuyển từ lao động chân tay sang lao động trí tuệ, làm chủ công nghệ</p>
+                    </div>
+                    <div class="vision-item">
+                        <h3>Công Đoàn Mạnh Mẽ</h3>
+                        <p>Từ mô hình phúc lợi sang đại diện thương lượng thực chất</p>
+                    </div>
+                    <div class="vision-item">
+                        <h3>Phát Triển Bền Vững</h3>
+                        <p>Tham gia sâu vào chuỗi giá trị toàn cầu, thoát bẫy thu nhập trung bình</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 16: Cinematic Ending -->
+        <section class="slide cinema-ending" data-index="19" data-act="ending" data-scene="cinematic-close">
+            <div class="workers-united-bg"></div>
+            <div class="fading-spotlight"></div>
+            <div class="theater-curtain-closing"></div>
+
+            <div class="slide-content text-center">
+                <div class="ending-quote slide-anim" data-anim="fade-in" data-delay="0.5">
+                    <h2>
+                        "Công đoàn Việt Nam không chỉ bảo vệ<br>
+                        người lao động,<br>
+                        mà còn đồng hành cùng sứ mệnh lịch sử<br>
+                        của GCCN"
+                    </h2>
+                </div>
+                <div class="ending-subtext slide-anim" data-anim="fade-up" data-delay="1">
+                    <p>TRONG THỜI ĐẠI CÔNG NGHIỆP HÓA, HIỆN ĐẠI HÓA VÀ HỘI NHẬP QUỐC TẾ</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
