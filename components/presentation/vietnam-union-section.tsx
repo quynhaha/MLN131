@@ -109,6 +109,13 @@ export function VietnamUnionSection() {
           className="mb-12"
         >
           <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">Vai trò của Công đoàn Việt Nam</h3>
+          <div className="mb-8 rounded-2xl overflow-hidden border border-border">
+            <img
+              src="/images/community-support.jpg"
+              alt="Workers being supported by union"
+              className="w-full h-96 object-cover"
+            />
+          </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               {

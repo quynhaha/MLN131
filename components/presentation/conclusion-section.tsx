@@ -61,6 +61,13 @@ export function ConclusionSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-12"
         >
+          <div className="mb-8 rounded-2xl overflow-hidden border border-border max-w-2xl mx-auto">
+            <img
+              src="/images/skills-training.jpg"
+              alt="Workers receiving skills training"
+              className="w-full h-80 object-cover"
+            />
+          </div>
           <h3 className="text-xl font-semibold text-foreground mb-6 text-center">Những điểm chính cần nhớ</h3>
           <div className="grid sm:grid-cols-2 gap-4">
             {[

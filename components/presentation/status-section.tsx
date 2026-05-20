@@ -73,6 +73,13 @@ export function StatusSection() {
           <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
             <span className="text-green-500">✓</span> Thành tựu
           </h3>
+          <div className="mb-8 rounded-2xl overflow-hidden border border-border max-w-2xl mx-auto">
+            <img
+              src="/images/labor-rights.jpg"
+              alt="Workers advocating for labor rights"
+              className="w-full h-80 object-cover"
+            />
+          </div>
           <div className="grid sm:grid-cols-3 gap-6">
             <motion.div 
               initial={{ opacity: 0, y: 30 }}

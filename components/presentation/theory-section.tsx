@@ -147,36 +147,49 @@ export function TheorySection() {
           >
             Vì sao công nhân cần Công đoàn?
           </motion.h3>
-          <div className="grid sm:grid-cols-3 gap-6">
-            {[
-              {
-                number: "01",
-                title: "Bên yếu thế",
-                desc: "Công nhân là bên yếu thế trước giới chủ. Dù là lực lượng tạo ra của cải vật chất chủ yếu, nhưng người công nhân không nắm giữ tư liệu sản xuất."
-              },
-              {
-                number: "02",
-                title: "Tổ chức đại diện",
-                desc: "Người lao động cần một tổ chức có tư cách pháp nhân để thay mặt họ đứng ra đối thoại, thương lượng và đàm phán bình đẳng với giới chủ."
-              },
-              {
-                number: "03",
-                title: "Sức mạnh đoàn kết",
-                desc: `"Sức mạnh của giai cấp công nhân không nằm ở tài sản cá nhân, mà nằm ở số lượng và sự đoàn kết" - Các Mác`
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.6 + index * 0.15 }}
-                className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors"
-              >
-                <div className="text-5xl font-black text-primary mb-4 drop-shadow-[0_0_10px_rgba(234,88,12,0.5)]">{item.number}</div>
-                <h4 className="text-lg font-semibold text-foreground mb-2">{item.title}</h4>
-                <p className="text-muted-foreground text-sm">{item.desc}</p>
-              </motion.div>
-            ))}
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              <img
+                src="/images/workers-unity.jpg"
+                alt="Workers standing in unity"
+                className="rounded-2xl border border-border w-full h-80 object-cover"
+              />
+            </motion.div>
+            <div className="grid gap-6">
+              {[
+                {
+                  number: "01",
+                  title: "Bên yếu thế",
+                  desc: "Công nhân là bên yếu thế trước giới chủ. Dù là lực lượng tạo ra của cải vật chất chủ yếu, nhưng người công nhân không nắm giữ tư liệu sản xuất."
+                },
+                {
+                  number: "02",
+                  title: "Tổ chức đại diện",
+                  desc: "Người lao động cần một tổ chức có tư cách pháp nhân để thay mặt họ đứng ra đối thoại, thương lượng và đàm phán bình đẳng với giới chủ."
+                },
+                {
+                  number: "03",
+                  title: "Sức mạnh đoàn kết",
+                  desc: `"Sức mạnh của giai cấp công nhân không nằm ở tài sản cá nhân, mà nằm ở số lượng và sự đoàn kết" - Các Mác`
+                }
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: 0.6 + index * 0.15 }}
+                  className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors"
+                >
+                  <div className="text-5xl font-black text-primary mb-4 drop-shadow-[0_0_10px_rgba(234,88,12,0.5)]">{item.number}</div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">{item.title}</h4>
+                  <p className="text-muted-foreground text-sm">{item.desc}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
