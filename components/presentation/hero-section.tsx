@@ -33,7 +33,7 @@ export function HeroSection() {
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance leading-tight"
         >
           Công đoàn Việt Nam
-          <span className="block text-primary mt-2">Người bảo vệ quyền lợi công nhân</span>
+          <span className="block text-primary mt-2 whitespace-nowrap">Người bảo vệ quyền lợi công nhân</span>
         </motion.h1>
 
         <motion.p
