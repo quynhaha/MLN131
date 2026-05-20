@@ -375,8 +375,8 @@ export function StatusSection() {
                   Yêu cầu tất yếu đối với Công đoàn
                 </h4>
                 <p className="text-muted-foreground text-sm pl-10">
-                  Công đoàn phải dịch chuyển từ &quot;mô hình phúc lợi mang tính phong trào&quot; sang &quot;mô hình đại di���n thương lượng thực chất&quot;. 
-                  Trở thành thực thể độc lập, có sức mạnh pháp lý, tinh thông nghiệp vụ đàm phán để bảo vệ cấu trúc tiền lương đủ sống.
+                  Công đoàn bắt buộc phải dịch chuyển trọng tâm hoạt động: từ {'"'}mô hình phúc lợi mang tính phong trào{'"'} (thăm hỏi, tặng quà, tổ chức văn nghệ) sang {'"'}mô hình đại diện thương lượng thực chất{'"'}. 
+                  Công đoàn phải trở thành một thực thể độc lập, có sức mạnh pháp lý, tinh thông về nghiệp vụ đàm phán để bảo vệ cấu trúc tiền lương đủ sống, đảm bảo môi trường an toàn lao động và nâng cao vị thế chính trị - xã hội cho giai cấp công nhân.
                 </p>
               </div>
             </div>
