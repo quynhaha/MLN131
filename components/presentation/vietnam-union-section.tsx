@@ -67,30 +67,43 @@ export function VietnamUnionSection() {
                 {
                   year: "Cuối TK XIX",
                   title: "Giai cấp công nhân ra đời",
-                  desc: "GCCN Việt Nam hình thành trong quá trình khai thác thuộc địa của thực dân Pháp"
+                  desc: "GCCN Việt Nam hình thành trong quá trình khai thác thuộc địa của thực dân Pháp",
+                  image: null
                 },
                 {
                   year: "Đầu TK XX",
                   title: "Các tổ chức đầu tiên",
-                  desc: "Công nhân dần liên kết đấu tranh, hình thành Hội Ái hữu, Hội Tương tế, Công hội"
+                  desc: "Công nhân dần liên kết đấu tranh, hình thành Hội Ái hữu, Hội Tương tế, Công hội",
+                  image: null
                 },
                 {
                   year: "1920",
                   title: "Công hội Ba Son",
-                  desc: "Tôn Đức Thắng thành lập Công hội Ba Son, mở đầu phong trào công hội Việt Nam"
+                  desc: "Tôn Đức Thắng thành lập Công hội Ba Son, mở đầu phong trào công hội Việt Nam",
+                  image: "/images/cong-hoi-ba-son.jpg"
                 },
                 {
                   year: "28/7/1929",
                   title: "Tổng Công hội Đỏ Bắc Kỳ",
-                  desc: "Dưới sự lãnh đạo của Nguyễn Đức Cảnh, đánh dấu sự ra đời của tổ chức Công đoàn Việt Nam"
+                  desc: "Dưới sự lãnh đạo của Nguyễn Đức Cảnh, đánh dấu sự ra đời của tổ chức Công đoàn Việt Nam",
+                  image: "/images/tong-cong-hoi-do-bac-ky.jpg"
                 }
               ].map((item, index) => (
                 <div key={index} className={`flex items-center gap-6 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
                   <div className={`flex-1 ${index % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
-                    <div className="bg-card border border-border rounded-xl p-4 inline-block">
+                    <div className="bg-card border border-border rounded-xl p-4 inline-block max-w-md">
                       <div className="text-primary font-bold text-lg">{item.year}</div>
                       <div className="font-medium text-foreground">{item.title}</div>
                       <p className="text-muted-foreground text-sm mt-1">{item.desc}</p>
+                      {item.image && (
+                        <div className="mt-3 rounded-lg overflow-hidden">
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="w-full h-32 object-cover"
+                          />
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="hidden md:flex w-4 h-4 rounded-full bg-primary shrink-0 relative z-10" />

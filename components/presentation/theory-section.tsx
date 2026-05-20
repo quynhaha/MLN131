@@ -59,6 +59,23 @@ export function TheorySection() {
           </div>
         </motion.div>
 
+        {/* GCCN Image */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="mb-12"
+        >
+          <div className="rounded-2xl overflow-hidden border border-border">
+            <img
+              src="/images/gccn.jpg"
+              alt="Giai cấp công nhân Việt Nam"
+              className="w-full h-64 sm:h-80 object-cover"
+            />
+          </div>
+          <p className="text-center text-muted-foreground text-sm mt-3">Giai cấp công nhân - lực lượng nòng cốt của cách mạng</p>
+        </motion.div>
+
         {/* GCCN Definition */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           <motion.div
