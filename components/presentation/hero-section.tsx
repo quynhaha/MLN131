@@ -8,8 +8,8 @@ export function HeroSection() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero-bg.jpg"
-          alt=""
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/M%E1%BB%9F%20%C4%91%E1%BA%A7u-xA4xmnXqVh8vWzVhNGBcYFMGUpOQls.png"
+          alt="Công đoàn Việt Nam"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background" />

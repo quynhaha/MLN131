@@ -68,7 +68,7 @@ export function VietnamUnionSection() {
                   year: "Cuối TK XIX",
                   title: "Giai cấp công nhân ra đời",
                   desc: "GCCN Việt Nam hình thành trong quá trình khai thác thuộc địa của thực dân Pháp",
-                  image: null
+                  image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Giai%20c%E1%BA%A5p%20c%C3%B4ng%20nh%C3%A2n%20ra%20%C4%91%E1%BB%9Di-zENTAWYicmI1UIuWepTADDahrS9tyu.png"
                 },
                 {
                   year: "Đầu TK XX",
@@ -80,13 +80,13 @@ export function VietnamUnionSection() {
                   year: "1920",
                   title: "Công hội Ba Son",
                   desc: "Tôn Đức Thắng thành lập Công hội Ba Son, mở đầu phong trào công hội Việt Nam",
-                  image: "/images/cong-hoi-ba-son.jpg"
+                  image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/C%C3%B4ng%20h%E1%BB%99i%20Ba%20Son-hDNa0rhY8Iov32F5JjaDF3fxdWh84c.png"
                 },
                 {
                   year: "28/7/1929",
                   title: "Tổng Công hội Đỏ Bắc Kỳ",
                   desc: "Dưới sự lãnh đạo của Nguyễn Đức Cảnh, đánh dấu sự ra đời của tổ chức Công đoàn Việt Nam",
-                  image: "/images/tong-cong-hoi-do-bac-ky.jpg"
+                  image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/C%C3%B4ng%20h%E1%BB%99i%20%C4%91%E1%BB%8F-jXav0Fnqx7fRHtBUWXRC22tqwi63ep.png"
                 }
               ].map((item, index) => (
                 <div key={index} className={`flex items-center gap-6 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
