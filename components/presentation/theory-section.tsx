@@ -13,8 +13,8 @@ export function TheorySection() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="/images/workers-bg.jpg"
-          alt=""
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ph%E1%BA%A7n%20d%E1%BA%ABn%20nh%E1%BA%ADp-zygybYAlDWmF6cu55cyaUWWcd0ZXlf.png"
+          alt="Dẫn nhập"
           className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background/80" />
@@ -57,6 +57,23 @@ export function TheorySection() {
               {`"Ai sẽ là người đứng ra bảo vệ công nhân?"`}
             </p>
           </div>
+        </motion.div>
+
+        {/* GCCN Image */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="mb-12"
+        >
+          <div className="rounded-2xl overflow-hidden border border-border">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GCCN-Nk1uFL0obpvp4F1Dh8f0uzUHViB1qv.png"
+              alt="Giai cấp công nhân Việt Nam"
+              className="w-full h-64 sm:h-80 object-cover"
+            />
+          </div>
+          <p className="text-center text-muted-foreground text-sm mt-3">Giai cấp công nhân - lực lượng nòng cốt của cách mạng</p>
         </motion.div>
 
         {/* GCCN Definition */}

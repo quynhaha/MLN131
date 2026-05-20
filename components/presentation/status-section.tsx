@@ -73,6 +73,41 @@ export function StatusSection() {
           <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
             <span className="text-green-500">✓</span> Thành tựu
           </h3>
+          
+          {/* Updated Stats */}
+          <div className="bg-card border border-border rounded-xl p-6 mb-6">
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Theo báo cáo của Tổng LĐLĐ Việt Nam, về đoàn viên công đoàn, thời điểm trước 31/5/2025 cả nước có 
+              <span className="text-foreground font-semibold"> 12.297.344 </span>đoàn viên công đoàn; sau sắp xếp tổ chức bộ máy theo 
+              Nghị quyết số 60-NQ/TW đến ngày 15/7/2025, cả nước còn 
+              <span className="text-foreground font-semibold"> 8.642.169 </span>đoàn viên công đoàn, giảm 3.665.175 đoàn viên.
+            </p>
+          </div>
+          
+          {/* Achievement Images */}
+          <div className="grid sm:grid-cols-2 gap-6 mb-6">
+            <div className="bg-card border border-border rounded-xl overflow-hidden">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Li%C3%AAn%20%C4%91o%C3%A0n%20Lao%20%C4%91%E1%BB%99ng-RLIBkGuKtNeTMM6zUY3FYeOLjEtLwC.png"
+                alt="Liên đoàn Lao động TP.HCM tổ chức Hội nghị tổng kết"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <p className="text-muted-foreground text-sm">Liên đoàn Lao động TP.HCM tổ chức Hội nghị tổng kết phong trào công nhân viên chức-người lao động và hoạt động Công đoàn năm 2025.</p>
+              </div>
+            </div>
+            <div className="bg-card border border-border rounded-xl overflow-hidden">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/T%E1%BA%BFt%20cho%20con%20em-1NPv6gdBm6WlleRF26UJV1NAEL0cp9.png"
+                alt="Chương trình Tết cho con em đoàn viên"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <p className="text-muted-foreground text-sm">Liên đoàn Lao động TP.HCM tổ chức chương trình tặng quà Tết cho con em đoàn viên, người lao động.</p>
+              </div>
+            </div>
+          </div>
+          
           <div className="grid sm:grid-cols-3 gap-6">
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
@@ -151,6 +186,16 @@ export function StatusSection() {
           <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
             <span className="text-amber-500">⚠️</span> Hạn chế
           </h3>
+          
+          {/* Limitation Image */}
+          <div className="mb-6 rounded-xl overflow-hidden border border-border">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/H%E1%BA%A1n%20ch%E1%BA%BF-6QOtYSmQ7wWGdLLCXxns1qxG1YfGpx.png"
+              alt="Hình minh họa cho phần hạn chế"
+              className="w-full h-64 object-cover"
+            />
+          </div>
+          
           <div className="grid sm:grid-cols-3 gap-6">
             {[
               {
@@ -162,7 +207,7 @@ export function StatusSection() {
                 desc: "Quy trình tổ chức đình công theo luật rất khó thực hiện, dẫn đến tình trạng ngừng việc tập thể"
               },
               {
-                title: "Công cụ hỗ trợ chưa đủ mạnh",
+                title: "Công cụ hỗ tr�� chưa đủ mạnh",
                 desc: "Thiếu quỹ dự phòng đủ lớn để hỗ trợ tài chính cho người lao động khi xảy ra tranh chấp kéo dài"
               }
             ].map((item, index) => (
@@ -184,6 +229,32 @@ export function StatusSection() {
           <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center gap-2">
             <span className="text-blue-500">📋</span> Case Study: Vụ ngừng việc tại Pouchen Việt Nam (01/2022)
           </h3>
+          
+          {/* Case Study Images */}
+          <div className="grid sm:grid-cols-3 gap-4 mb-6">
+            <div className="rounded-xl overflow-hidden border border-border">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Case%20Study-6RoC3jD38f7jSk5nVJ2vcGfi15wfiJ.png"
+                alt="Công ty TNHH Pouyuen Việt Nam"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden border border-border">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Case%20Study%202-j5ZDanyY0WPvZ3hIwodPyHn53QSqTN.png"
+                alt="Công nhân ngừng việc tập thể"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden border border-border">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Case%20Study%203-wRXGcuHKpEUNXfGu3T8kXkxAuIGNba.png"
+                alt="Công nhân biểu tình"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+          </div>
+          
           <div className="bg-card border border-border rounded-2xl overflow-hidden">
             <div className="bg-muted/50 px-6 py-4 border-b border-border">
               <div className="flex items-center justify-between flex-wrap gap-2">
@@ -275,6 +346,16 @@ export function StatusSection() {
           transition={{ duration: 0.6, delay: 0.5 }}
         >
           <h3 className="text-2xl font-semibold text-foreground mb-6">Liên hệ sứ mệnh lịch sử GCCN trong thời đại mới</h3>
+          
+          {/* Mission Image */}
+          <div className="mb-6 rounded-xl overflow-hidden border border-border">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Li%C3%AAn%20h%E1%BB%87%20s%E1%BB%A9%20m%E1%BB%87nh%20l%E1%BB%8Bch%20s%E1%BB%AD%20GCCN%20trong%20th%E1%BB%9Di%20%C4%91%E1%BA%A1i%20m%E1%BB%9Bi-bxkjiMzLi6bCeUBll85rVtmDFoC92p.png"
+              alt="Sứ mệnh lịch sử GCCN trong thời đại mới"
+              className="w-full h-64 object-cover"
+            />
+          </div>
+          
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 sm:p-8">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -294,8 +375,8 @@ export function StatusSection() {
                   Yêu cầu tất yếu đối với Công đoàn
                 </h4>
                 <p className="text-muted-foreground text-sm pl-10">
-                  Công đoàn phải dịch chuyển từ &quot;mô hình phúc lợi mang tính phong trào&quot; sang &quot;mô hình đại di���n thương lượng thực chất&quot;. 
-                  Trở thành thực thể độc lập, có sức mạnh pháp lý, tinh thông nghiệp vụ đàm phán để bảo vệ cấu trúc tiền lương đủ sống.
+                  Công đoàn bắt buộc phải dịch chuyển trọng tâm hoạt động: từ {'"'}mô hình phúc lợi mang tính phong trào{'"'} (thăm hỏi, tặng quà, tổ chức văn nghệ) sang {'"'}mô hình đại diện thương lượng thực chất{'"'}. 
+                  Công đoàn phải trở thành một thực thể độc lập, có sức mạnh pháp lý, tinh thông về nghiệp vụ đàm phán để bảo vệ cấu trúc tiền lương đủ sống, đảm bảo môi trường an toàn lao động và nâng cao vị thế chính trị - xã hội cho giai cấp công nhân.
                 </p>
               </div>
             </div>
