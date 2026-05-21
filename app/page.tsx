@@ -21,7 +21,7 @@ export default function PresentationPage() {
       <footer className="py-8 border-t border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-muted-foreground text-sm">
-            Bài thuyết trình Chương 2 - Chủ nghĩa Xã hội Khoa học
+            Bài thuyết trình Chương 2 - SỨ MỆNH LỊCH SỬ CỦA GIAI CẤP CÔNG NHÂN
           </p>
           <p className="text-muted-foreground text-xs mt-2">
             © 2024 - Công đoàn Việt Nam - Người bảo vệ quyền lợi công nhân

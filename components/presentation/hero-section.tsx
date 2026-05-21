@@ -8,7 +8,7 @@ export function HeroSection() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/M%E1%BB%9F%20%C4%91%E1%BA%A7u-xA4xmnXqVh8vWzVhNGBcYFMGUpOQls.png"
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/M%E1%BB%9F%20%C4%91%E1%BA%A7u%20%282%29.png-yHMhZJjAQWfMNSJGlwrWo2UdFhZvgB.jpeg"
           alt="Công đoàn Việt Nam"
           className="w-full h-full object-cover"
         />
@@ -22,7 +22,7 @@ export function HeroSection() {
           transition={{ duration: 0.6 }}
         >
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-            Chương 2 - Chủ nghĩa Xã hội Khoa học
+            Chương 2 - SỨ MỆNH LỊCH SỬ CỦA GIAI CẤP CÔNG NHÂN
           </span>
         </motion.div>
 

@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Công đoàn Việt Nam - Người bảo vệ quyền lợi công nhân',
-  description: 'Bài thuyết trình Chương 2 - Chủ nghĩa Xã hội Khoa học về vai trò của Công đoàn Việt Nam',
+  description: 'Bài thuyết trình Chương 2 - SỨ MỆNH LỊCH SỬ CỦA GIAI CẤP CÔNG NHÂN về vai trò của Công đoàn Việt Nam',
   generator: 'v0.app',
   icons: {
     icon: [

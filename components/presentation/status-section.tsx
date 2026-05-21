@@ -116,7 +116,7 @@ export function StatusSection() {
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
               <div className="text-4xl font-bold text-primary mb-2">
-                <CountUp end={13} suffix=" Tr" isInView={isInView} />
+                <CountUp end={8} suffix=" Tr" isInView={isInView} />
               </div>
               <div className="text-muted-foreground text-sm">Đoàn viên công đoàn</div>
             </motion.div>
