@@ -94,7 +94,7 @@ export function ConclusionSection() {
               Cảm ơn đã lắng nghe!
             </h3>
             <p className="text-muted-foreground">
-              Bài thuyết trình Chương 2 - Chủ nghĩa Xã hội Khoa học
+              Bài thuyết trình Chương 2 - SỨ MỆNH LỊCH SỬ CỦA GIAI CẤP CÔNG NHÂN
             </p>
           </div>
         </motion.div>

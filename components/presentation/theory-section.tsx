@@ -31,7 +31,7 @@ export function TheorySection() {
             Cơ sở lý luận
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Liên hệ kiến thức Chương 2 - Chủ nghĩa Xã hội Khoa học về Giai cấp công nhân
+            Liên hệ kiến thức Chương 2 - SỨ MỆNH LỊCH SỬ CỦA GIAI CẤP CÔNG NHÂN
           </p>
         </motion.div>
 
