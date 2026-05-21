@@ -24,7 +24,7 @@ export default function PresentationPage() {
             Bài thuyết trình Chương 2 - SỨ MỆNH LỊCH SỬ CỦA GIAI CẤP CÔNG NHÂN
           </p>
           <p className="text-muted-foreground text-xs mt-2">
-            © 2024 - Công đoàn Việt Nam - Người bảo vệ quyền lợi công nhân
+            © 2026 - Công đoàn Việt Nam - Người bảo vệ quyền lợi công nhân
           </p>
         </div>
       </footer>
