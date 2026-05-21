@@ -207,7 +207,7 @@ export function StatusSection() {
                 desc: "Quy trình tổ chức đình công theo luật rất khó thực hiện, dẫn đến tình trạng ngừng việc tập thể"
               },
               {
-                title: "Công cụ hỗ tr�� chưa đủ mạnh",
+                title: "Công cụ hỗ trợ chưa đủ mạnh",
                 desc: "Thiếu quỹ dự phòng đủ lớn để hỗ trợ tài chính cho người lao động khi xảy ra tranh chấp kéo dài"
               }
             ].map((item, index) => (
